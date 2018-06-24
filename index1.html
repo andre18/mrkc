@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="private">
+    <title>Marrakech</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="main" id="app">
+        <div class="info_block left" id="info-block-left">
+            <div class="gamer_name" id="gamer_name_block_1">
+                <h3 id="gamer_name_1">Игрок 1</h3>
+            </div>
+            <div class="gamer-info">
+                    <div class="carpets" id="carpet_1">24</div>
+                    <div class="money" id="money_1">30</div>
+            </div>
+        </div>
+        <!-- Игровое поле -->
+        <div class="line can">
+            <canvas id="canvas" crossOrigin="anonymous"></canvas>
+
+            <div class="arrows_block hidden" id="arrows_block_toggle">
+                <div class="arrow" id="a37" v-on:click="arrows(37)"></div>
+                <div class="arrow" id="a38" v-on:click="arrows(38)"></div>
+                <div class="tools_dice">
+                    <div id="d" class="dice" v-on:click="dice">0</div>
+                </div>
+                <div class="arrow" id="a39" v-on:click="arrows(39)"></div>
+                <div class="arrow" id="a40" v-on:click="arrows(40)"></div>
+            </div>
+            <div class="win_block hidden" id="win">
+                <h3 id="win_gamer_name"></h3>
+                <div id="num_points"></div>
+            </div>
+        </div>
+        <div class="info_block right" id="info-block-right">
+            <div class="gamer_name" id="gamer_name_block_2">
+                <h3 id="gamer_name_2">Игрок 2</h3>
+            </div>
+            <div class="gamer-info">
+                    <div class="carpets" id="carpet_2">24</div>
+                    <div class="money" id="money_2">30</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!--<script src="es5/map.js"></script>-->
+    <script src="es6/map.js"></script>
+    <script src="es6/control.js"></script>
+    <!--<script src="es5/assan.js"></script>-->
+    <script src="es6/assan.js"></script>
+    <!--<script src="es5/carpet.js"></script>-->
+    <script src="es6/carpet.js"></script>
+    <script src="es6/gamer.js"></script>
+    <script src="es6/computer.js"></script>
+    <!--<script src="es5/test.js"></script>-->
+    <script src="es6/test.js"></script>
+</body>
+</html>
