@@ -245,7 +245,7 @@ class Control {
 
             let ii = this.gamer2.myMethod();
             let yy = diceNumb[Math.floor(Math.random()*(diceNumb.length))];
-            alert(yy);
+//             alert(yy);
             this.assan.SidePressed = ii;
             this.assan._stepCount = yy;
 
