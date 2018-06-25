@@ -39,7 +39,7 @@ class Control {
     //TODO дописать для 3-х и 4-х игроков
     gamersQueue() {
 
-        let color1 = '#8ebe76';
+        let color1 = '#8bf788';
         let color2 = '#264cc5';
         let color3 = '#8d7cc2';
         let color4 = '#e06665';
