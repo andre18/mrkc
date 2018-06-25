@@ -476,7 +476,7 @@ class Control {
         }
 
         let t = '#c00';
-        if (gamer.id === 1) t = "#8bf788";
+        if (gamer.id === 1) t = "#19aa16";
         if (gamer.id === 2) t = "#1c36bc";
         if (gamer.id === 3) t = "#9196fe";
         if (gamer.id === 4) t = "#fb9294";
